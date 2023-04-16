@@ -31,9 +31,11 @@ function addAnswer(answer) {
   answers.push(answer);
 }
 
+
 function printAnswers() {
-  console.log(answers);
-}
+  for (let i = 0; i < answers.length; i++) {
+    console.log(answers[i]);
+  }}
 
 let question1 = 'Do you have any experiance in programming ?';
 let answer1 = askQuestion(question1);
@@ -48,3 +50,5 @@ let answer3 = askQuestion(question3);
 addAnswer(answer3);
 
 printAnswers();
+
+
